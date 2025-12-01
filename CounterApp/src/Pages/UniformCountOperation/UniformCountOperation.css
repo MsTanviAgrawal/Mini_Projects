@@ -1,9 +1,4 @@
 
-
-/* ========================================
-   MOBILE FIRST APPROACH (Base Styles)
-   ======================================== */
-
 .uni-container {
   display: flex;
   justify-content: center;
@@ -21,7 +16,7 @@
   align-items: center;
   gap: 15px;
   padding: 20px;
-  background-color: rgb(21, 21, 21);
+  background: rgb(10, 10, 10);
   border: 3px double white;
   width: 100%;
   max-width: 1200px;
@@ -90,10 +85,6 @@
   box-shadow: rgba(106, 104, 107, 0.925) 0 15px 30px -5px;
 }
 
-/* ========================================
-   SMALL PHONES (320px - 480px)
-   ======================================== */
-
 @media (min-width: 320px) and (max-width: 480px) {
   .uni-container {
     margin-top: 12vh;
@@ -123,10 +114,6 @@
     padding: 10px 14px;
   }
 }
-
-/* ========================================
-   LARGE PHONES & SMALL TABLETS (481px - 768px)
-   ======================================== */
 
 @media (min-width: 481px) and (max-width: 768px) {
   .uni-container {
@@ -162,10 +149,6 @@
   }
 }
 
-/* ========================================
-   TABLETS & MEDIUM SCREENS (769px - 1024px)
-   ======================================== */
-
 @media (min-width: 769px) and (max-width: 1024px) {
   .uni-container {
     margin-top: 20vh;
@@ -199,10 +182,6 @@
   }
 }
 
-/* ========================================
-   LARGE SCREENS (1025px+)
-   ======================================== */
-
 @media (min-width: 1025px) {
   .uni-container {
     margin-top: 22vh;
@@ -235,10 +214,6 @@
     min-width: 140px;
   }
 }
-
-/* ========================================
-   EXTRA LARGE SCREENS (1400px+)
-   ======================================== */
 
 @media (min-width: 1400px) {
   .uni-wrap {
