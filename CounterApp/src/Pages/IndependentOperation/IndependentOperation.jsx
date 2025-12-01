@@ -19,17 +19,19 @@ const IndependentOperation = () => {
         <h1 className="ind-heading">Independent Count Page</h1>
 
         <div className="ind-section">
-
-            <h2 className="indcount">Increase count: {count}</h2>
+  <h2 className="indcount">Increase count: {count}</h2>
+    <h2 className="indcount">Decrease count: {count1}</h2>
+    </div>
+            
            <div className="inc-btn">
-             
+           
              <button className="ind-btn" onClick={()=>setCount(count+1)} >Increase</button>
              <button className="ind-btn" onClick={()=>handleReset("inc")} >Rest</button>
            </div>
            
-           <h2 className="indcount">Decrease count: {count1}</h2>
+           
            <div className="dec-btn">
-             
+          
              <button className="ind-btn" onClick={()=>setCount1(count1-1)} >Decrease</button>
              <button className="ind-btn" onClick={()=>handleReset("dec")} >Reset</button>
            </div>
@@ -37,7 +39,7 @@ const IndependentOperation = () => {
         </div>
 
       </div>
-    </div>
+  
   )
 }
 

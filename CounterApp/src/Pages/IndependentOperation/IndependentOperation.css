@@ -30,20 +30,20 @@
 
 .ind-section{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
 }
 
 
 .inc-btn{
   display: flex;
-  flex-direction: column;
+ 
   gap: 20px;
 }
 
 .dec-btn{
   display: flex;
-  flex-direction: column;
+
   gap: 20px;
 }
 
