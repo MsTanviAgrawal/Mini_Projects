@@ -11,13 +11,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
     
     background-color: rgb(21, 21, 21);
     border: 5px double white;
     width: 70%;
     max-width: 1200px;
-    padding: 50px;
+    padding: 60px;
+   
 }
 
 .ind-heading{
@@ -31,27 +32,50 @@
 .ind-section{
   display:flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
+  border: 2px solid rgb(114, 109, 109);
+  box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  box-sizing: border-box;
+  padding: 40px 30px ;
 }
 
+.ind-section1{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border: 2px solid rgb(114, 109, 109);
+  box-shadow: 0 4px 8px 0 rgba(253, 253, 253, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  box-sizing: border-box;
+  padding: 40px 30px;
+}
 
 .inc-btn{
   display: flex;
- 
-  gap: 20px;
+  gap: 30px;
 }
 
-.dec-btn{
+.ind-row-top{
   display: flex;
-
-  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;       /* Increase & Decrease section ke beech gap */
+  width: 100%;
+  margin-top: 20px;
 }
+
+ .dec-btn{
+  display: flex;
+  gap: 30px;
+} 
 
 .indcount{
-    font-size: 2rem;
-    color: rgb(186, 175, 175);
-    margin-bottom: 10px;
+    font-size: 3rem;
+    color: rgb(190, 253, 179);
+    margin-bottom: 10px;   
 }
+
 
 
 /* .buttons {
@@ -72,16 +96,17 @@
   color: #FFFFFF;
   display: flex;
   font-family: Phantomsans, sans-serif;
-  font-size: 20px;
+  font-size: 1.5rem;
   justify-content: center;
   line-height: 1em;
   max-width: 100%;
-  min-width: 140px;
-  padding: 5px;
+  min-width: 160px;
+  padding: 20px;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
   
 .ind-btn:hover {
   outline: 0;
@@ -107,4 +132,4 @@
     min-width: 196px;
   }
 }
-
+}
