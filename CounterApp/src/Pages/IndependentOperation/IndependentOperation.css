@@ -103,10 +103,6 @@
   box-shadow: rgba(106, 104, 107, 0.925) 0 15px 30px -5px;
 }
 
-/* ========================================
-   SMALL PHONES (320px - 480px)
-   ======================================== */
-
 @media (min-width: 320px) and (max-width: 480px) {
   .ind-container {
     margin-top: 12vh;
@@ -123,7 +119,7 @@
   }
 
   .indcount {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .ind-section,
@@ -143,10 +139,6 @@
   }
 }
 
-/* ========================================
-   LARGE PHONES & SMALL TABLETS (481px - 768px)
-   ======================================== */
-
 @media (min-width: 481px) and (max-width: 768px) {
   .ind-container {
     margin-top: 18vh;
@@ -163,7 +155,7 @@
   }
 
   .indcount {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .ind-section,
@@ -196,9 +188,6 @@
   }
 }
 
-/* ========================================
-   TABLETS & MEDIUM SCREENS (769px - 1024px)
-   ======================================== */
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .ind-container {
@@ -217,7 +206,7 @@
   }
 
   .indcount {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .ind-section,
@@ -250,10 +239,6 @@
   }
 }
 
-/* ========================================
-   LARGE SCREENS (1025px+)
-   ======================================== */
-
 @media (min-width: 1025px) {
   .ind-container {
     margin-top: 22vh;
@@ -271,7 +256,7 @@
   }
 
   .indcount {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .ind-section,
@@ -302,10 +287,6 @@
     flex: 1;
   }
 }
-
-/* ========================================
-   EXTRA LARGE SCREENS (1400px+)
-   ======================================== */
 
 @media (min-width: 1400px) {
   .ind-wrap {
