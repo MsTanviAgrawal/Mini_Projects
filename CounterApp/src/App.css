@@ -1,25 +1,84 @@
+/* ========================================
+   GLOBAL RESET & BASE STYLES
+   ======================================== */
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
+/* ========================================
+   MOBILE FIRST APPROACH (Base Styles)
+   ======================================== */
 
 body {
-  /* background: #ffb8dc;
-background: linear-gradient(90deg, rgba(255, 184, 220, 1) 0%, rgba(199, 70, 151, 1) 50%, rgba(143, 6, 102, 1) 100%); */
-
-
-/* background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%); */
-
-/* background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%); */
-
-background-image: url(./assets/6031991.jpg);
-background-size: cover;
-background-repeat: no-repeat;
+  background-image: url(./assets/6031991.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
   font-family: "Times New Roman", Times, serif;
-  margin-top: 100px;
+  margin-top: 60px;
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================================
+   SMALL PHONES (320px - 480px)
+   ======================================== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    margin-top: 50px;
+    font-size: 14px;
+  }
+}
+
+/* ========================================
+   LARGE PHONES & SMALL TABLETS (481px - 768px)
+   ======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    margin-top: 70px;
+    font-size: 15px;
+  }
+}
+
+/* ========================================
+   TABLETS & MEDIUM SCREENS (769px - 1024px)
+   ======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    margin-top: 80px;
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   LARGE SCREENS (1025px+)
+   ======================================== */
+
+@media (min-width: 1025px) {
+  body {
+    margin-top: 100px;
+    font-size: 16px;
+  }
+}
+
+/* ========================================
+   EXTRA LARGE SCREENS (1400px+)
+   ======================================== */
+
+@media (min-width: 1400px) {
+  body {
+    margin-top: 100px;
+  }
 }

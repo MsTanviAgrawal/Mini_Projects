@@ -1,4 +1,8 @@
-.navbar{ 
+/* ========================================
+   MOBILE FIRST APPROACH (Base Styles)
+   ======================================== */
+
+.navbar {
   width: 100%;
   position: fixed;
   top: 0;
@@ -7,49 +11,212 @@
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(12px);
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1001;
-  height: 40px;
+  height: auto;
+  min-height: 50px;
   box-shadow: 0 2px 12px rgba(251, 190, 242, 0.2);
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
-
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.nav-heading{
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgb(8, 8, 8);
-    text-shadow:  3px 1px  rgb(243, 237, 237);
+.nav-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(8, 8, 8);
+  text-shadow: 2px 1px rgb(243, 237, 237);
+  margin: 0;
+  white-space: nowrap;
 }
 
-.nav-container{
-    margin-right: 80px;
-
+.nav-container {
+  width: 100%;
+  margin: 0;
 }
 
-.nav-links{
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-links button{
+.nav-links button {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: 0.2s;
+  font-size: 0.75rem;
+  transition: color 0.3s ease, transform 0.3s ease;
   background: transparent;
   border: none;
-  padding: 8px 12px;
+  padding: 6px 8px;
   cursor: pointer;
   font-family: inherit;
-  transition: color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
 }
 
-.nav-links button:hover{
-    color: rgb(207, 207, 207);
+.nav-links button:hover {
+  color: rgb(207, 207, 207);
+  transform: scale(1.05);
+}
+
+.nav-links button:active {
+  transform: scale(0.95);
+}
+
+/* ========================================
+   SMALL PHONES (320px - 480px)
+   ======================================== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    padding: 0.6rem 0.8rem;
+    min-height: 45px;
+    gap: 0.3rem;
+  }
+
+  .nav-heading {
+    font-size: 1.1rem;
+  }
+
+  .nav-container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-links {
+    gap: 0.3rem;
+    justify-content: center;
+  }
+
+  .nav-links button {
+    font-size: 0.65rem;
+    padding: 5px 6px;
+  }
+}
+
+/* ========================================
+   LARGE PHONES & SMALL TABLETS (481px - 768px)
+   ======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1.2rem;
+    min-height: 55px;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  .nav-heading {
+    font-size: 1.5rem;
+  }
+
+  .nav-container {
+    width: auto;
+    margin: 0;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .nav-links button {
+    font-size: 0.85rem;
+    padding: 7px 10px;
+  }
+}
+
+/* ========================================
+   TABLETS & MEDIUM SCREENS (769px - 1024px)
+   ======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+    min-height: 65px;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+
+  .nav-heading {
+    font-size: 2rem;
+  }
+
+  .nav-container {
+    width: auto;
+    margin: 0;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+    justify-content: flex-end;
+  }
+
+  .nav-links button {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}
+
+/* ========================================
+   LARGE SCREENS (1025px+)
+   ======================================== */
+
+@media (min-width: 1025px) {
+  .navbar {
+    padding: 1rem 2rem;
+    min-height: auto;
+    height: 70px;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .nav-heading {
+    font-size: 3rem;
+    text-shadow: 3px 1px rgb(243, 237, 237);
+  }
+
+  .nav-container {
+    width: auto;
+    margin-right: 80px;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    justify-content: flex-end;
+  }
+
+  .nav-links button {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+
+  .nav-links button:hover {
     transform: scale(1.1);
+  }
+}
+
+/* ========================================
+   EXTRA LARGE SCREENS (1400px+)
+   ======================================== */
+
+@media (min-width: 1400px) {
+  .navbar {
+    height: 75px;
+  }
+
+  .nav-heading {
+    font-size: 3.5rem;
+  }
+
+  .nav-links button {
+    font-size: 1.3rem;
+  }
 }

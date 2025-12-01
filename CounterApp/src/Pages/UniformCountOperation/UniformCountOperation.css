@@ -1,89 +1,250 @@
 
 
-.uni-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 22vh;
-    
+/* ========================================
+   MOBILE FIRST APPROACH (Base Styles)
+   ======================================== */
+
+.uni-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 15vh;
+  padding: 10px;
+  max-height: 100vh;
+  box-sizing: border-box;
 }
 
-.uni-wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 80px;
-    background-color: rgb(21, 21, 21);
-    border: 5px double white;
+.uni-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: rgb(21, 21, 21);
+  border: 3px double white;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
-.unicount-heading{
-    font-size: 3rem;
-    font-family:'Times New Roman', Times, serif;
-    color: rgb(251, 251, 251);
-    text-shadow:  3px 2px  rgb(122, 122, 139);
+.unicount-heading {
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(251, 251, 251);
+  text-shadow: 2px 1px rgb(122, 122, 139);
+  margin: 0;
+  text-align: center;
+  word-wrap: break-word;
 }
 
-.unicount{
-    font-size: 2rem;
-    color: rgb(241, 252, 179);
-    margin-bottom: 10px;
+.unicount {
+  font-size: 1.2rem;
+  color: rgb(241, 252, 179);
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: center;
+  word-wrap: break-word;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 .count-btns {
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
   border: 0;
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
   color: #FFFFFF;
   display: flex;
   font-family: Phantomsans, sans-serif;
-  font-size: 20px;
+  font-size: 0.9rem;
   justify-content: center;
   line-height: 1em;
+  width: 100%;
   max-width: 100%;
-  min-width: 140px;
-  padding: 5px;
+  padding: 12px 16px;
   text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
+  background-color: rgb(5, 6, 45);
+  transition: 300ms ease;
 }
 
 .count-btns:active,
 .count-btns:hover {
   outline: 0;
+  transform: scale(1.05);
+  box-shadow: rgba(106, 104, 107, 0.925) 0 15px 30px -5px;
 }
 
-.count-btns {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
+/* ========================================
+   SMALL PHONES (320px - 480px)
+   ======================================== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .uni-container {
+    margin-top: 12vh;
+    padding: 8px;
+  }
+
+  .uni-wrap {
+    padding: 15px;
+    gap: 12px;
+    border: 2px double white;
+  }
+
+  .unicount-heading {
+    font-size: 1.3rem;
+  }
+
+  .unicount {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+
+  .count-btns {
+    font-size: 0.8rem;
+    padding: 10px 14px;
+  }
 }
 
-.count-btns:hover {
-    transform: scale(1.05);
-    box-shadow: rgba(106, 104, 107, 0.925) 0 15px 30px -5px;
+/* ========================================
+   LARGE PHONES & SMALL TABLETS (481px - 768px)
+   ======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .uni-container {
+    margin-top: 18vh;
+    padding: 12px;
+  }
+
+  .uni-wrap {
+    padding: 30px;
+    gap: 18px;
+    border: 4px double white;
+  }
+
+  .unicount-heading {
+    font-size: 2rem;
+  }
+
+  .unicount {
+    font-size: 1.5rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .count-btns {
+    font-size: 1rem;
+    padding: 14px 20px;
+    flex: 1;
+    min-width: 120px;
+  }
 }
 
-@media (min-width: 768px) {
+/* ========================================
+   TABLETS & MEDIUM SCREENS (769px - 1024px)
+   ======================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .uni-container {
+    margin-top: 20vh;
+    padding: 16px;
+  }
+
+  .uni-wrap {
+    padding: 45px;
+    gap: 20px;
+    border: 5px double white;
+    width: 85%;
+  }
+
+  .unicount-heading {
+    font-size: 2.5rem;
+  }
+
+  .unicount {
+    font-size: 1.8rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  .count-btns {
+    font-size: 1.2rem;
+    padding: 16px 24px;
+    min-width: 140px;
+  }
+}
+
+/* ========================================
+   LARGE SCREENS (1025px+)
+   ======================================== */
+
+@media (min-width: 1025px) {
+  .uni-container {
+    margin-top: 22vh;
+    padding: 20px;
+  }
+
+  .uni-wrap {
+    padding: 80px;
+    gap: 20px;
+    border: 5px double white;
+    width: 70%;
+  }
+
+  .unicount-heading {
+    font-size: 3rem;
+  }
+
+  .unicount {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .count-btns {
+    font-size: 20px;
+    padding: 16px 24px;
+    min-width: 140px;
+  }
+}
+
+/* ========================================
+   EXTRA LARGE SCREENS (1400px+)
+   ======================================== */
+
+@media (min-width: 1400px) {
+  .uni-wrap {
+    max-width: 1200px;
+  }
+
   .count-btns {
     font-size: 24px;
     min-width: 196px;
