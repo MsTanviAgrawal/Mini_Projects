@@ -12,7 +12,7 @@ const UniformCountOperation = () => {
 
       <div className="uni-wrap" >
         <h1 className="unicount-heading" >Uniform Count Page</h1>
-        <h2 className="count1" > Count: {count} </h2>
+        <h2 className="unicount" > Count: {count} </h2>
 
         <div className="buttons">
         <button className="count-btns" onClick={()=>setCount(count+1)} >Increase</button>
