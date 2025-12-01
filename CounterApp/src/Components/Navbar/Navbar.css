@@ -3,8 +3,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: hsla(285, 97%, 30%, 0.4);
-  backdrop-filter: blur(12px);
+  background: hsla(265, 78%, 65%, 0.4);
+  backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(12px);
   color: white;
   padding: 1rem 2rem;

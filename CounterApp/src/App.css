@@ -13,8 +13,11 @@ background: linear-gradient(90deg, rgba(255, 184, 220, 1) 0%, rgba(199, 70, 151,
 
 /* background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%); */
 
-background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+/* background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%); */
 
+background-image: url(./assets/6031991.jpg);
+background-size: cover;
+background-repeat: no-repeat;
   color: white;
   font-family: "Times New Roman", Times, serif;
   margin-top: 100px;
