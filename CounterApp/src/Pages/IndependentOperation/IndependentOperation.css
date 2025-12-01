@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15vh;
+    margin-top: 22vh;
     
 }
 
@@ -82,11 +82,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.ind-btn:active,
+  
 .ind-btn:hover {
   outline: 0;
 }

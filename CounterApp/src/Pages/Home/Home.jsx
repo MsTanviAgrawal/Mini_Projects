@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-container">
+        <h1 className="home-heading">Choose One</h1>
         <Link to="/increase">
           <button className="btn" >Increase</button>
         </Link>

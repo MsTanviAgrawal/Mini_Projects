@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 25vh;
+    margin-top: 22vh;
     
 }
 
@@ -24,12 +24,11 @@
     font-family:'Times New Roman', Times, serif;
     color: rgb(251, 251, 251);
     text-shadow:  3px 2px  rgb(122, 122, 139);
-
 }
 
-.count1{
+.unicount{
     font-size: 2rem;
-    color: rgb(253, 46, 46);
+    color: rgb(241, 252, 179);
     margin-bottom: 10px;
 }
 
