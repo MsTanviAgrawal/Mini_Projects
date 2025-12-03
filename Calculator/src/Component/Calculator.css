@@ -25,6 +25,7 @@
   min-height: 10vh;
   background: #e6f9f9;
   margin-bottom: 15px;
+  border: 2px solid rgb(9, 104, 109);
   border-radius: 10px;
   font-size: 32px;
   padding: 15px;
